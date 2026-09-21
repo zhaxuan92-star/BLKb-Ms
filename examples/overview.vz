@@ -1,0 +1,9 @@
+# Extra module: demonstrates variable references
+
+set system.description = "VzCore runtime inspired by the Vz_sign architecture"
+
+command "about" {
+    require system.read
+    print $system.description
+    print $system.version
+}
