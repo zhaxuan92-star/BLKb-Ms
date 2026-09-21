@@ -1,0 +1,8 @@
+# VzCore permissions
+system.read
+system.write
+overview.read
+overview.write
+leader.read
+leader.write
+admin.*
