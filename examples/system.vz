@@ -1,0 +1,29 @@
+# VzCore system definition
+
+system "Vinh Quang VzCore"
+
+set system.version = "3.0"
+set system.language = "vi-VN"
+
+set nation.name = "Đế chế Vzcomm"
+set nation.population = 436000000
+set nation.capital = "Xuân Phong"
+set nation.currency = "Long Châu"
+set nation.animal = "Rồng Băng"
+
+command "leader" {
+    require leader.read
+    print "======= STATE LEADER ======="
+    show leader.name
+}
+
+command "overview" {
+    require overview.read
+    print "======= NATIONAL OVERVIEW ======="
+    show nation.name
+    show nation.population
+    show nation.capital
+    show nation.currency
+    show nation.animal
+    show overview.text
+}
